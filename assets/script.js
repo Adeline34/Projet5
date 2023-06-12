@@ -1,10 +1,12 @@
-const img = document.querySelector('#banner')
+const leftArrow = document.querySelector('arrow_left');
+const rightArrow = document.querySelector('arrow_right');
 
-img.addEventListener('click', clickOutcome)
+leftArrow.addEventListener('click',function(){;
+console.log('clique gauche');})
+rightArrow.addEventListener('click',function(){
+console.log('clique droite');});
 
-function clickOutcome() {
-	alert('clique sur moi')
-}
+
 
 const slides = [
 	{
