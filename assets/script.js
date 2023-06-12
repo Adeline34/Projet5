@@ -1,10 +1,15 @@
-const leftArrow = document.querySelector('arrow_left');
-const rightArrow = document.querySelector('arrow_right');
+const leftArrow = document.querySelector('.arrow_left');
+const rightArrow = document.querySelector('.arrow_right');
 
-leftArrow.addEventListener('click',function(){;
-console.log('clique gauche');})
-rightArrow.addEventListener('click',function(){
-console.log('clique droite');});
+leftArrow.addEventListener('click',clickOutcome)
+
+function clickOutcome(){
+	alert('cliquegauche')}
+
+rightArrow.addEventListener('click',clickOutcome)
+
+function clickOutcome(){
+	alert('clique droit')}
 
 
 
