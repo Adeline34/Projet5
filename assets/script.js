@@ -1,3 +1,11 @@
+const img = document.querySelector('#banner')
+
+Text.addEventListener('click',clickOutcome)
+
+function clickOutcome() {
+	alert('cliquer sur moi')
+}
+
 const slides = [
 	{
 		"image":"slide1.jpg",
