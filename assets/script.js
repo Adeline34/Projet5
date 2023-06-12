@@ -1,9 +1,9 @@
 const img = document.querySelector('#banner')
 
-Text.addEventListener('click',clickOutcome)
+img.addEventListener('click', clickOutcome)
 
 function clickOutcome() {
-	alert('cliquer sur moi')
+	alert('clique sur moi')
 }
 
 const slides = [
