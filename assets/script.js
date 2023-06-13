@@ -1,17 +1,15 @@
 const leftArrow = document.querySelector('.arrow_left');
 const rightArrow = document.querySelector('.arrow_right');
 
-leftArrow.addEventListener('click',clickOutcome)
+leftArrow.addEventListener('click',ClickOutCome)
 
-function clickOutcome(){
-	alert('cliquegauche')}
+function ClickOutCome(){
+	alert('clique gauche')}
 
-rightArrow.addEventListener('click',clickOutcome)
+rightArrow.addEventListener('click',Click)
 
-function clickOutcome(){
+function Click(){
 	alert('clique droit')}
-
-
 
 const slides = [
 	{
