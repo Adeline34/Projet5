@@ -1,61 +1,26 @@
 //fléches
 const leftArrow = document.querySelector('.arrow_left');
 const rightArrow = document.querySelector('.arrow_right');
-const dots = document.querySelector('.dots');
-const img = document.querySelector('.banner-img');
-let positionSlide = 0;
-const txt = document.querySelector('.banner-txt');
-
 
 //Addeventlistener
 leftArrow.addEventListener("click",()=>{
-	positionSlide--;
-	if (positionSlide === -1){
-		positionSlide = slides.lenght - 1;
-	}
-	  img.src = slides[positionSlide].image;
-	  txt.innerHTML = slides[positionSlide].tagLine;
-	  console.log("j'ai cliqué à gauche");
-	  severalDots();
+	 alert("j'ai cliqué à gauche");
 });
 
 rightArrow.addEventListener("click",()=>{
-	positionSlide++;
-	if (positionSlide === slides.lenght){
-		positionSlide = 0;
-	}
-	  img.src = slides[positionSlide].image;
-	  txt.innerHTML = slides[positionSlide].tagLine;
-	  console.log("j'ai cliqué à droite");
-	  severalDots();
+
+	  alert("j'ai cliqué à droite");
+
 });
 
-for (let i= 0; i< slides.lenght;i++){
-	const newDot = document.createElement('div');
-	newDot.classList = 'dot';
-	dots.appendChild(newdot);
-	newDot.addEventListener('click',()=>{
-		positionSlide = i;
-		img.src = slides[positionSlide].image;
-		txt.innerHTML = slides[positionSlide].tagLine;
-		severalDots();
-	})
-}
-
 //Bullet point
-let dot = document.querySelectorAll('.dot');
-dot[0].classList.add('dot_selected');
+const bullet = document.querySelector('.dots');
 
-function severalDots () {
-	for (let i = 0; i < dot.length; i++) {
-		if (i === positionSlide) {
-			dot[i].classList.add('dot_selected');
-		} else {
-			dot[i].classList.remove('dot_selected');
-		}
-	}
-}
+bullet.classList.add('dot')
 
+const select = document.querySelector('.dots');
+
+select.classList.add('dot_selected')
 
 
 const slides = [
