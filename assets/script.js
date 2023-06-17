@@ -1,26 +1,26 @@
-//fléches
+//const
 const leftArrow = document.querySelector('.arrow_left');
 const rightArrow = document.querySelector('.arrow_right');
+const img = document.querySelector('.banner-img');
+let numero = 0;
 
 //Addeventlistener
+
 leftArrow.addEventListener("click",()=>{
-	 alert("j'ai cliqué à gauche");
+	 console.log("j'ai cliqué à gauche");
+	
 });
 
 rightArrow.addEventListener("click",()=>{
 
-	  alert("j'ai cliqué à droite");
-
+	  console.log("j'ai cliqué à droite");
+      img.src = "./assets/images/slideshow/slide2.jpg";
 });
 
 //Bullet point
 const bullet = document.querySelector('.dots');
+	bullet.classList.add('dot');
 
-bullet.classList.add('dot')
-
-const select = document.querySelector('.dots');
-
-select.classList.add('dot_selected')
 
 
 const slides = [
