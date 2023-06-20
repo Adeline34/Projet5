@@ -22,7 +22,7 @@ const leftArrow = document.querySelector('.arrow_left');
 const rightArrow = document.querySelector('.arrow_right');
 const dots = document.querySelector('.dots');
 const img = document.querySelector('.banner-img');
-const txt = document.querySelector('.banner-txt');
+const txt = document.querySelector('p');
 
 //fléches+img
 let positionSlide = 0;
