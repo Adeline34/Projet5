@@ -17,14 +17,15 @@ const slides = [
 	}
 ];
 
-//const
+//Flèche de droite et flèche de gauche
 const leftArrow = document.querySelector('.arrow_left');
 const rightArrow = document.querySelector('.arrow_right');
+//Création des const pour bullet point + img + tagline
 const dots = document.querySelector('.dots');
 const img = document.querySelector('.banner-img');
 const txt = document.querySelector('p');
 
-//fléches+img
+//Event listener+position img+ changer la src de l'img et le tagline
 let positionSlide = 0;
 leftArrow.addEventListener('click', function() {
 	positionSlide--;
@@ -48,7 +49,7 @@ rightArrow.addEventListener('click', function() {
 	Dots();
 });
 
-//bullet
+//bullet point
 for (let i = 0; i < slides.length; i++) {
 	const bullet = document.createElement('div');
 	bullet.classList = 'dot';
